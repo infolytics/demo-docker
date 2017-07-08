@@ -1,7 +1,7 @@
 FROM nvidia/cuda:8.0-devel-ubuntu14.04
 
 RUN apt-get update
-RUN apt-get install -y wget git vim
+RUN apt-get install -y wget git vim nano
 
 # Add user
 RUN useradd -ms /bin/bash appuser
