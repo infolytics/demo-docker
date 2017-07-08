@@ -1,2 +1,2 @@
 cd ~/mapd/
-./startmapd --non-interactive
+./startmapd
