@@ -27,7 +27,7 @@ nvidia-docker run -p 8888:8888 -p 9092:9092 -ti cudf:latest
 
 This launches the mapd, and the notebook automatically.
 
-Login to the MapD with your browser by clicking on http://<ip address>:9092
+Login to the MapD with your browser by clicking on http://\<ip address\>:9092
 Follow the instructions to cerate some charts using MapD Immerse.
 
 Open `mapd_to_pygdf_to_h2oaiglm.ipynb` and hit "Run All" to test.
