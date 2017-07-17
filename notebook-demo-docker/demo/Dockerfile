@@ -14,6 +14,10 @@ USER appuser
 # Add MapD
 ARG MAPD_FILE="mapd-os-3.1.1-20170628-45a6fa8-Linux-x86_64"
 RUN wget https://builds.mapd.com/os/${MAPD_FILE}.tar.gz
+RUN wget https://s3.amazonaws.com/h2o-airlines-unpacked/allyears.csv
+RUN awk -f modify.awk allyears.csv > allyears_modified.csv
+RUN rm allyears.csv
+
 # Extract MapD
 RUN tar -xvf ${MAPD_FILE}.tar.gz
 RUN ln -s $MAPD_FILE ./mapd
