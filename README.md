@@ -46,5 +46,5 @@ To run on specific GPUs, use [NV_GPU](https://github.com/NVIDIA/nvidia-docker/wi
 For example:
 
 ```bash
-NV_GPU=0 nvidia-docker run -p 8888:8888 -ti cudf:latest
+NV_GPU=0 nvidia-docker run -p 8888:8888 -p 9092:9092 -ti cudf:latest
 ```
